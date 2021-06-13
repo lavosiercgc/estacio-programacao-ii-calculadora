@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.estacio.programacaoii.ui;
+package calculadoraWindows;
 
-/**
- *
- * @author aluno
- */
 public class Calculadora extends javax.swing.JFrame {
 
     private int resultado;
@@ -103,11 +94,6 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        btn_7.setText("7");
-
-        btn_8.setText("8");
-
-        btn_9.setText("9");
 
         btn_multiplicacao.setText("x");
         btn_multiplicacao.addActionListener(new java.awt.event.ActionListener() {
@@ -115,17 +101,22 @@ public class Calculadora extends javax.swing.JFrame {
                 btn_multiplicacaoActionPerformed(evt);
             }
         });
+        
+        btn_0.setText("0");
+        btn_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_0ActionPerformed(evt);
+            }
+        });      
+        
 
         btn_1.setText("1");
         btn_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_1ActionPerformed(evt);
             }
-        });
-
-        btn_4.setText("4");
-
-        btn_5.setText("5");
+        });      
+        
 
         btn_2.setText("2");
         btn_2.addActionListener(new java.awt.event.ActionListener() {
@@ -140,14 +131,52 @@ public class Calculadora extends javax.swing.JFrame {
                 btn_3ActionPerformed(evt);
             }
         });
+        
+        btn_4.setText("4");
+        btn_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_4ActionPerformed(evt);
+            }
+        });
 
-        btn_soma.setText("+");
-
-        btn_menos.setText("-");
+        btn_5.setText("5");
+        btn_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_5ActionPerformed(evt);
+            }
+        }); 
 
         btn_6.setText("6");
+        btn_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_6ActionPerformed(evt);
+            }
+        });
+        
+        btn_7.setText("7");
+        btn_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_7ActionPerformed(evt);
+            }
+        });
 
-        btn_0.setText("0");
+        btn_8.setText("8");
+        btn_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_8ActionPerformed(evt);
+            }
+        });
+
+        btn_9.setText("9");
+        btn_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_9ActionPerformed(evt);
+            }
+        });
+        
+        
+        btn_menos.setText("-");
+        btn_soma.setText("+");
 
         btn_virgula.setText(",");
 
@@ -284,6 +313,10 @@ public class Calculadora extends javax.swing.JFrame {
     private void btn_acActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_acActionPerformed
         this.input_operacao.setText("");
     }//GEN-LAST:event_btn_acActionPerformed
+    
+    private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("0");
+     }
 
     private void btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
        this.addValues("1");
@@ -296,6 +329,26 @@ public class Calculadora extends javax.swing.JFrame {
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
          this.addValues("3");
     }//GEN-LAST:event_btn_3ActionPerformed
+    
+    private void btn_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("4");
+     }
+    private void btn_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("5");
+     }
+    private void btn_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("6");
+     }
+    private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("7");
+     }
+    private void btn_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("8");
+     }
+    private void btn_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
+        this.addValues("9");
+     }
+
 
     private void addValues(String value) {
         // pega o texto do campo input
